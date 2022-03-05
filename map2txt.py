@@ -5,14 +5,14 @@ import cv2
 
 img = cv2.imread('./R-C.png',0)
 
-ylen = len(img) # 2480
-xlen = len(img[0])# 4378
+ylen = len(img)
+xlen = len(img[0])
 
 data = ''
-for x in range(160):
-    for y in range(120):
-        imgX = round((4378/160)*x)
-        imgY = round((2480/120)*y)
+for x in range(120):
+    for y in range(90):
+        imgX = round((xlen/120)*x)
+        imgY = round((ylen/90)*y)
         v = img[imgY][imgX]
         if(v == 188):
             data += '1'
