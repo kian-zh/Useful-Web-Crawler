@@ -10,9 +10,9 @@ xlen = len(img[0])
 
 data = ''
 for x in range(120):
-    for y in range(90):
+    for y in range(70):
         imgX = round((xlen/120)*x)
-        imgY = round((ylen/90)*y)
+        imgY = round((ylen/70)*y)
         v = img[imgY][imgX]
         if(v == 188):
             data += '1'
